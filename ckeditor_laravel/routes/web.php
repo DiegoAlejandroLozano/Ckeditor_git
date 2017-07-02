@@ -1,5 +1,7 @@
 <?php
 
+//http://localhost/mis_archivos/Ckeditor_git/ckeditor_laravel/public/
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +16,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('formulario', 'misControladores\FormularioController@mostrarFormulario');
