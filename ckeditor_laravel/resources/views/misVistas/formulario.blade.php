@@ -20,7 +20,7 @@
 	<form action="" method="post">
 		{{ csrf_field() }}
 
-		<textarea name="areaTexto" id="areaTexto" cols="30" rows="10">Hola diego</textarea>
+		<textarea name="areaTexto" id="areaTexto" cols="30" rows="10"></textarea>
 		@ckeditor('areaTexto')
 
 		<p>
