@@ -8,6 +8,16 @@ use App\Http\Controllers\Controller;
 class FormularioController extends Controller
 {
     public function mostrarFormulario(){
-    	return view('misVistas.formulario');
+
+    	$contenido = '';
+
+    	return view('misVistas.formulario', ['contenido' => $contenido]);
+    }
+
+    public function mostrarTexto(Request $request){
+
+    	$contenido = $request->areaTexto;
+
+    	return view('misVistas.formulario', ['contenido' => $contenido]);
     }
 }

@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('formulario', 'misControladores\FormularioController@mostrarFormulario');
+Route::post('formulario', 'misControladores\FormularioController@mostrarTexto');
